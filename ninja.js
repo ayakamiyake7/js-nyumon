@@ -55,5 +55,8 @@ let text2 = "レモン";
 //   }, 1000);
 // }, 2000);
 
-let fruits = ["リンゴ", "メロン", "バナナ"];
-alert(fruits[1]);
+// let fruits = ["リンゴ", "メロン", "バナナ"];
+// alert(fruits[1]);
+
+const count = document.querySelectorAll("li").length;
+console.log(count);
