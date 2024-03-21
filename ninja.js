@@ -26,10 +26,10 @@ let text2 = "レモン";
 // console.log(orange);
 // console.log(grape);
 
-const fruits = document.querySelectorAll("li");
-fruits.forEach((fruit) => {
-  fruit.addEventListener("click", () => alert(fruit.getAttribute("class")));
-});
+// const fruits = document.querySelectorAll("li");
+// fruits.forEach((fruit) => {
+//   fruit.addEventListener("click", () => alert(fruit.getAttribute("class")));
+// });
 
 // 答えの一つ
 // document.addEventListener("DOMContentLoaded", function () {
@@ -41,3 +41,19 @@ fruits.forEach((fruit) => {
 //     });
 //   });
 // });
+
+// const popUpAlert = () => {
+//   alert("alert!");
+// };
+
+// setTimeout(popUpAlert, 2000);
+
+// setTimeout(() => {
+//   console.log("1");
+//   setTimeout(() => {
+//     console.log("2");
+//   }, 1000);
+// }, 2000);
+
+let fruits = ["リンゴ", "メロン", "バナナ"];
+alert(fruits[1]);
