@@ -58,5 +58,23 @@ let text2 = "レモン";
 // let fruits = ["リンゴ", "メロン", "バナナ"];
 // alert(fruits[1]);
 
-const count = document.querySelectorAll("li").length;
-console.log(count);
+// const count = document.querySelectorAll("li").length;
+// console.log(count);
+
+// document.querySelector("p").classList.add("is-active");
+// document.querySelector("p").classList.remove("blue");
+
+// const text = document.querySelector("p");
+// text.addEventListener("click", () => {
+//   text.classList.toggle("is-active");
+// });
+
+// 11
+const div = document.querySelector("div");
+const child = document.createElement("p");
+child.textContent = `ダミーテキストA`;
+div.prepend(child);
+
+const add_child = document.createElement("p");
+add_child.textContent = "ダミーテキストF";
+div.appendChild(add_child);
