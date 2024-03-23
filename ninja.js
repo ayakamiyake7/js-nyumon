@@ -70,11 +70,21 @@ let text2 = "レモン";
 // });
 
 // 11
-const div = document.querySelector("div");
-const child = document.createElement("p");
-child.textContent = `ダミーテキストA`;
-div.prepend(child);
+// const div = document.querySelector("div");
+// const child = document.createElement("p");
+// child.textContent = `ダミーテキストA`;
+// div.prepend(child);
 
-const add_child = document.createElement("p");
-add_child.textContent = "ダミーテキストF";
-div.appendChild(add_child);
+// 12
+// const add_child = document.createElement("p");
+// add_child.textContent = "ダミーテキストF";
+// div.appendChild(add_child);
+
+// 13
+const target = document.querySelector(".target");
+const dummyTexts = ["ダミーテキストF", "ダミーテキストG", "ダミーテキストH"];
+dummyTexts.forEach((name) => {
+  const child = document.createElement("p");
+  child.textContent = name;
+  target.parentNode.insertBefore(child, target.nextSibling);
+});
