@@ -81,10 +81,20 @@ let text2 = "レモン";
 // div.appendChild(add_child);
 
 // 13
+// const target = document.querySelector(".target");
+// const dummyTexts = ["ダミーテキストF", "ダミーテキストG", "ダミーテキストH"];
+// dummyTexts.forEach((name) => {
+//   const child = document.createElement("p");
+//   child.textContent = name;
+//   target.parentNode.insertBefore(child, target.nextSibling);
+// });
+
+// 14, 15, 16, 17
+const trigger = document.querySelector(".trigger");
 const target = document.querySelector(".target");
-const dummyTexts = ["ダミーテキストF", "ダミーテキストG", "ダミーテキストH"];
-dummyTexts.forEach((name) => {
-  const child = document.createElement("p");
-  child.textContent = name;
-  target.parentNode.insertBefore(child, target.nextSibling);
+trigger.addEventListener("click", () => {
+  target.style.opacity = "0";
+  target.style.transition = ".15s ease-in-out";
 });
+
+// confirm();
