@@ -5,8 +5,8 @@ let windowSize = window.innerWidth;
 // let num2 = 8;
 // alert(windowSize);
 
-let text1 = "リンゴ・バナナ";
-let text2 = "レモン";
+// let text1 = "リンゴ・バナナ";
+// let text2 = "レモン";
 // text1 = text1.replace("リンゴ・バナナ", "リンゴ・");
 // alert((text1 + text2).replace("バナナ", ""));
 
@@ -90,11 +90,29 @@ let text2 = "レモン";
 // });
 
 // 14, 15, 16, 17
-const trigger = document.querySelector(".trigger");
-const target = document.querySelector(".target");
-trigger.addEventListener("click", () => {
-  target.style.opacity = "0";
-  target.style.transition = ".15s ease-in-out";
-});
+// const trigger = document.querySelector(".trigger");
+// const target = document.querySelector(".target");
+// trigger.addEventListener("click", () => {
+//   target.style.opacity = "0";
+//   target.style.transition = ".15s ease-in-out";
+// });
 
 // confirm();
+
+// alert(innerWidth);
+// console.log(window.innerWidth);
+// let num1 = 5;
+// let num2 = 8;
+// alert(num1 + num2);
+
+// let text1 = "リンゴ・バナナ";
+// let text2 = "レモン";
+// alert(text1.replace("バナナ", "") + text2);
+
+const fruits = document.querySelectorAll("li");
+fruits.forEach((fruit) => {
+  fruit.addEventListener("click", () => {
+    // console.log(fruit.className);
+    console.log(fruit.getAttribute("class"));
+  });
+});
