@@ -109,10 +109,39 @@ let windowSize = window.innerWidth;
 // let text2 = "レモン";
 // alert(text1.replace("バナナ", "") + text2);
 
-const fruits = document.querySelectorAll("li");
-fruits.forEach((fruit) => {
-  fruit.addEventListener("click", () => {
-    // console.log(fruit.className);
-    console.log(fruit.getAttribute("class"));
-  });
+// const fruits = document.querySelectorAll("li");
+// fruits.forEach((fruit) => {
+//   fruit.addEventListener("click", () => {
+//     // console.log(fruit.className);
+//     console.log(fruit.getAttribute("class"));
+//   });
+// });
+
+// 5
+// setTimeout(() => {
+//   alert("hi");
+// }, 2000);
+
+// 6
+// const fruits = ["リンゴ", "メロン", "バナナ"];
+// alert(fruits[1]);
+
+// 7
+// console.log(`liタグの数は${document.querySelectorAll("li").length}個です。`);
+
+// 8
+// const text = document.querySelector("p");
+// text.classList.add("is-active");
+
+// 9
+// const text = document.querySelector("p");
+// text.classList.remove("blue");
+
+// 10
+const text = document.querySelector("p");
+text.addEventListener("click", () => {
+  text.classList.toggle("is-active");
 });
+
+// 4
+// 5
