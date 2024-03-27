@@ -138,10 +138,17 @@ let windowSize = window.innerWidth;
 // text.classList.remove("blue");
 
 // 10
-const text = document.querySelector("p");
-text.addEventListener("click", () => {
-  text.classList.toggle("is-active");
-});
+// const text = document.querySelector("p");
+// text.addEventListener("click", () => {
+//   text.classList.toggle("is-active");
+// });
+
+// 11
+const target = document.querySelector(".target");
+const text = document.createElement("p");
+text.innerText = "ダミーテキストA";
+target.prepend(text);
 
 // 4
 // 5
+// 11
