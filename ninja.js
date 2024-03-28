@@ -144,11 +144,58 @@ let windowSize = window.innerWidth;
 // });
 
 // 11
+// const target = document.querySelector(".target");
+// const text = document.createElement("p");
+// text.innerText = "ダミーテキストA";
+// target.prepend(text);
+
+// 12
+// const target = document.querySelector(".target");
+// const item = document.createElement("p");
+// item.textContent = "ダミーテキストF";
+// target.appendChild(item);
+// console.log(item);
+
+// 13
+// const target = document.querySelector(".target");
+// const texts = [
+//   "ダミーテキストF",
+//   "ダミーテキストG",
+//   "ダミーテキストH",
+//   "ダミーテキストI",
+//   "ダミーテキストJ",
+// ];
+// texts.forEach((text) => {
+//   const item = document.createElement("p");
+//   item.textContent = text;
+//   target.parentNode.insertBefore(item, target.nextSibling);
+// });
+
+// 14,15
+// const trigger = document.querySelector(".trigger");
+// const target = document.querySelector(".target");
+// trigger.addEventListener("click", () => {
+//   target.style.display = "none";
+// });
+
+// 16
+// const trigger = document.querySelector(".trigger");
+// const target = document.querySelector(".target");
+// trigger.addEventListener("click", () => {
+//   target.style.transition = "all 0.2s ease-in-out";
+//   target.style.opacity = "1";
+// });
+
+// 17
+const trigger = document.querySelector(".trigger");
 const target = document.querySelector(".target");
-const text = document.createElement("p");
-text.innerText = "ダミーテキストA";
-target.prepend(text);
+trigger.addEventListener("click", () => {
+  target.style.opacity = 0;
+  target.style.transition = "all 0.2s ease-in-out";
+});
 
 // 4
 // 5
 // 11
+// 13
+// 16
