@@ -187,15 +187,43 @@ let windowSize = window.innerWidth;
 // });
 
 // 17
-const trigger = document.querySelector(".trigger");
-const target = document.querySelector(".target");
-trigger.addEventListener("click", () => {
-  target.style.opacity = 0;
-  target.style.transition = "all 0.2s ease-in-out";
-});
+// const trigger = document.querySelector(".trigger");
+// const target = document.querySelector(".target");
+// trigger.addEventListener("click", () => {
+//   target.style.opacity = 0;
+//   target.style.transition = "all 0.2s ease-in-out";
+// });
 
 // 4
 // 5
 // 11
 // 13
 // 16
+
+// 中級
+// 1
+// const box = document.querySelector(".box");
+// console.log(box.clientWidth);
+
+// 2
+// const title = document.querySelector(".title");
+// const colorChange = document.getElementById("color-change");
+// colorChange.addEventListener("change", () => {
+//   console.log(colorChange.value);
+//   title.style.color = colorChange.value;
+// });
+
+// 3
+const listItems = document.querySelectorAll("li");
+let maxHeight = 0;
+
+listItems.forEach((item) => {
+  if (item.clientHeight > maxHeight) {
+    maxHeight = item.clientHeight;
+  }
+  // console.log(item.clientHeight);
+});
+
+listItems.forEach((item) => {
+  item.style.height = `${maxHeight}px`;
+});
