@@ -214,16 +214,49 @@ let windowSize = window.innerWidth;
 // });
 
 // 3
-const listItems = document.querySelectorAll("li");
-let maxHeight = 0;
+// const listItems = document.querySelectorAll("li");
+// let maxHeight = 0;
 
-listItems.forEach((item) => {
-  if (item.clientHeight > maxHeight) {
-    maxHeight = item.clientHeight;
-  }
-  // console.log(item.clientHeight);
-});
+// listItems.forEach((item) => {
+//   if (item.clientHeight > maxHeight) {
+//     maxHeight = item.clientHeight;
+//   }
+//   // console.log(item.clientHeight);
+// });
 
-listItems.forEach((item) => {
-  item.style.height = `${maxHeight}px`;
+// listItems.forEach((item) => {
+//   item.style.height = `${maxHeight}px`;
+// });
+
+// 4
+// const items = document.querySelectorAll("li");
+// items.forEach((item, i) => {
+//   item.addEventListener("click", () => {
+//     console.log(`あなたは${i + 1}番目を押しました`);
+//   });
+// });
+
+// 5
+// const h1 = document.querySelector("h1");
+// const birthday = document.getElementById("birthday");
+// birthday.addEventListener("change", () => {
+//   if (birthday.value === "1990-01-23") {
+//     h1.style.display = "block";
+//   }
+// });
+
+// 6
+// const el = (i) => {
+//   console.log(`なるほど！${i}なんですね！`);
+// };
+// el("テレビ");
+
+// 7
+const items = document.querySelectorAll("li");
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    if ((item.style.backgroundColor = "rgb(255, 0, 0)")) {
+      item.style.backgroundColor = "rgb(0, 0, 255)";
+    }
+  });
 });
