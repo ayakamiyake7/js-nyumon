@@ -252,11 +252,41 @@ let windowSize = window.innerWidth;
 // el("テレビ");
 
 // 7
-const items = document.querySelectorAll("li");
-items.forEach((item) => {
-  item.addEventListener("click", () => {
-    if ((item.style.backgroundColor = "rgb(255, 0, 0)")) {
-      item.style.backgroundColor = "rgb(0, 0, 255)";
-    }
-  });
-});
+// const items = document.querySelectorAll("li");
+// items.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     if ((item.style.backgroundColor = "rgb(255, 0, 0)")) {
+//       item.style.backgroundColor = "rgb(0, 0, 255)";
+//     }
+//   });
+// });
+
+// 8
+// const ninja = (target) => {
+//   if (Number.isInteger(target)) {
+//     console.log("整数です");
+//   }
+// };
+// ninja("10");
+
+// 9
+// const ninja = (target) => {
+//   console.log(target.length);
+// };
+// ninja("忍者CODE");
+
+// 10
+// let date = new Date();
+// const month_judge = (target) => {
+//   if (target == date.getMonth() + 1) {
+//     console.log("今月の月です！");
+//   } else {
+//     console.log("今月の月ではありません");
+//   }
+// };
+// month_judge(6);
+
+// 11
+const ninja = [1, 3, 5, 7];
+ninja.pop();
+console.log(ninja);
