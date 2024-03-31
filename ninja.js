@@ -287,6 +287,59 @@ let windowSize = window.innerWidth;
 // month_judge(6);
 
 // 11
-const ninja = [1, 3, 5, 7];
-ninja.pop();
-console.log(ninja);
+// const ninja = [1, 3, 5, 7];
+// ninja.pop();
+// console.log(ninja);
+
+// 12
+let target_str = "忍者CODE";
+// const ninja_judge = (str) => {
+//   if (str.includes("忍者CODE")) {
+//     console.log("含む！");
+//   }
+// };
+// ninja_judge("おはよう忍者CODE");
+
+// もう一つの答え
+// const ninja_judge = (str) => {
+//   if (str.indexOf(target_str) !== -1) {
+//     console.log("含む！");
+//   }
+// };
+// ninja_judge("おはよう忍者CODE");
+
+// 13
+// const ninja = "28";
+// console.log(Number(ninja));
+// console.log(typeof Number(ninja));
+
+// 14
+// const ninja = [2, 4, 52, 9, 38];
+// console.log(ninja[3]);
+
+// 15
+// const my_uppercase = (str) => {
+//   console.log(str.toUpperCase());
+// };
+// my_uppercase("ninjacode");
+
+// 16
+// const my_array = [2, 19, 59, 203, 5];
+// console.log(Math.max(...my_array));
+
+// 17
+// const clone = document.querySelector(".clone");
+// const ul = document.querySelector("ul");
+// clone.addEventListener("click", () => {
+//   const list = document.createElement("li");
+//   list.textContent = "忍者CODE";
+//   ul.appendChild(list);
+// });
+
+// 18
+const answer = document.querySelector(".answer");
+const text = document.querySelector("input");
+text.addEventListener("focus", () => {
+  console.log(text.value);
+  answer.textContent = text.value;
+});
