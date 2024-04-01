@@ -337,9 +337,29 @@ let target_str = "忍者CODE";
 // });
 
 // 18
-const answer = document.querySelector(".answer");
-const text = document.querySelector("input");
-text.addEventListener("focus", () => {
-  console.log(text.value);
-  answer.textContent = text.value;
+// const answer = document.querySelector(".answer");
+// const text = document.querySelector("input");
+// text.addEventListener("focus", () => {
+//   console.log(text.value);
+//   answer.textContent = text.value;
+// });
+
+// 19
+const xScroll = document.querySelector(".x-scroll");
+const scroll_val = document.querySelector(".scroll-val");
+xScroll.addEventListener("scroll", (e) => {
+  // console.log(xScroll.scrollLeft);
+  scroll_val.textContent = xScroll.scrollLeft;
+});
+
+// 20
+const deleteButton = document.querySelector(".delete");
+const ul = document.querySelector("ul");
+deleteButton.addEventListener("click", () => {
+  const lis = document.querySelectorAll("li");
+  if (lis.length > 0) {
+    // ul.lastElementChild.remove();
+    var lastLi = lis[lis.length - 1];
+    ul.removeChild(lastLi);
+  }
 });
