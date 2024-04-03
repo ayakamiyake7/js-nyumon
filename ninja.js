@@ -345,21 +345,94 @@ let target_str = "忍者CODE";
 // });
 
 // 19
-const xScroll = document.querySelector(".x-scroll");
-const scroll_val = document.querySelector(".scroll-val");
-xScroll.addEventListener("scroll", (e) => {
-  // console.log(xScroll.scrollLeft);
-  scroll_val.textContent = xScroll.scrollLeft;
-});
+// const xScroll = document.querySelector(".x-scroll");
+// const scroll_val = document.querySelector(".scroll-val");
+// xScroll.addEventListener("scroll", (e) => {
+//   // console.log(xScroll.scrollLeft);
+//   scroll_val.textContent = xScroll.scrollLeft;
+// });
 
 // 20
-const deleteButton = document.querySelector(".delete");
-const ul = document.querySelector("ul");
-deleteButton.addEventListener("click", () => {
-  const lis = document.querySelectorAll("li");
-  if (lis.length > 0) {
-    // ul.lastElementChild.remove();
-    var lastLi = lis[lis.length - 1];
-    ul.removeChild(lastLi);
+// const deleteButton = document.querySelector(".delete");
+// const ul = document.querySelector("ul");
+// deleteButton.addEventListener("click", () => {
+//   const lis = document.querySelectorAll("li");
+//   if (lis.length > 0) {
+//     var lastLi = lis[lis.length - 1];
+//     ul.removeChild(lastLi);
+//   }
+// });
+
+// 21
+function handleClick(e) {
+  const attributeDelete = e.target.getAttribute("data-delete");
+  console.log(attributeDelete);
+  const deleteTarget = document.querySelector("[data-delete-target]");
+
+  if (attributeDelete === "id") {
+    deleteTarget.removeAttribute("id");
+  } else if (attributeDelete === "class") {
+    deleteTarget.removeAttribute("class");
   }
+}
+
+const attributeDataDeletes = document.querySelectorAll("[data-delete]");
+attributeDataDeletes.forEach((attributeDataDelete) => {
+  attributeDataDelete.addEventListener("click", handleClick);
+});
+// // Function to handle click event on elements with data-delete attribute
+// function handleClick(event) {
+//   // Get the value of data-delete attribute
+//   var attributeToDelete = event.target.getAttribute("data-delete");
+//   // If data-delete-target attribute exists, get the target element
+//   var targetElement = document.querySelector("[data-delete-target]");
+//   // Check if the attribute to delete is 'id' or 'class'
+//   if (attributeToDelete === "id") {
+//     // Remove the id attribute
+//     targetElement.removeAttribute("id");
+//   } else if (attributeToDelete === "class") {
+//     // Remove the class attribute
+//     targetElement.removeAttribute("class");
+//   }
+// }
+
+// // Add click event listener to all elements with data-delete attribute
+// var elementsWithDeleteAttribute = document.querySelectorAll("[data-delete]");
+// elementsWithDeleteAttribute.forEach(function (element) {
+//   element.addEventListener("click", handleClick);
+// });
+
+// 22
+// const val = document.querySelector(".scroll-val");
+// window.addEventListener("scroll", () => {
+//   const txt = window.scrollY;
+//   val.textContent = txt;
+// });
+
+// 23
+// const val = document.querySelector(".val");
+// const add = document.querySelector(".add");
+// const textValue = document.querySelector("input");
+// // textValue.addEventListener("change", (e) => {
+// //   const textValue = e.target.value;
+// //   add.addEventListener("click", () => {
+// //     val.textContent = textValue;
+// //   });
+// // });
+// add.addEventListener("click", () => {
+//   const inputValue = textValue.value;
+//   val.textContent += inputValue;
+// });
+
+// 24
+// const double = document.querySelector(".double");
+// double.addEventListener("dblclick", () => {
+//   console.log("alert!");
+// });
+
+//25
+const val = document.querySelector(".val");
+const txt = document.querySelector('input[type = "text"]');
+txt.addEventListener("change", () => {
+  val.textContent = txt.value;
 });
