@@ -431,8 +431,23 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // });
 
 //25
-const val = document.querySelector(".val");
-const txt = document.querySelector('input[type = "text"]');
-txt.addEventListener("change", () => {
-  val.textContent = txt.value;
+// const val = document.querySelector(".val");
+// const txt = document.querySelector('input[type = "text"]');
+// txt.addEventListener("change", () => {
+//   val.textContent = txt.value;
+// });
+
+// 26
+// const val = document.querySelector(".val");
+// function resizeWin() {
+//   val.textContent = val.offsetWidth;
+// }
+
+// window.addEventListener("resize", resizeWin);
+
+// 27
+const elVal = document.querySelector(".val");
+const target = document.querySelector("input[type=text]");
+target.addEventListener("keyup", () => {
+  elVal.textContent = target.value;
 });
