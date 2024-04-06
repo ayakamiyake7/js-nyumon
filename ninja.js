@@ -446,8 +446,41 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // window.addEventListener("resize", resizeWin);
 
 // 27
-const elVal = document.querySelector(".val");
-const target = document.querySelector("input[type=text]");
-target.addEventListener("keyup", () => {
-  elVal.textContent = target.value;
+// const elVal = document.querySelector(".val");
+// const target = document.querySelector("input[type=text]");
+// target.addEventListener("keyup", () => {
+//   elVal.textContent = target.value;
+// });
+
+// 中級2回目
+// 1
+// const box = document.querySelector(".box");
+// console.log(box.offsetWidth);
+// console.log(box.clientWidth);
+
+// 2
+// const title = document.querySelector(".title");
+// const colorChange = document.getElementById("color-change");
+// console.log(colorChange.value);
+// colorChange.addEventListener("change", () => {
+//   console.log(colorChange.value);
+//   title.style.color = colorChange.value;
+// });
+
+// 3
+const LIs = document.querySelectorAll("li");
+let maxHeight = 0;
+LIs.forEach((LI) => {
+  console.log(maxHeight);
+  console.log(LI.clientHeight);
+  if (maxHeight < LI.clientHeight) {
+    maxHeight = LI.clientHeight;
+  }
 });
+
+LIs.forEach((LI) => {
+  LI.style.height = `${maxHeight}px`;
+});
+
+// 1
+// 3
