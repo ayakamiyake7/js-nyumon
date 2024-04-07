@@ -292,7 +292,7 @@ let windowSize = window.innerWidth;
 // console.log(ninja);
 
 // 12
-let target_str = "忍者CODE";
+// let target_str = "忍者CODE";
 // const ninja_judge = (str) => {
 //   if (str.includes("忍者CODE")) {
 //     console.log("含む！");
@@ -468,19 +468,39 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // });
 
 // 3
-const LIs = document.querySelectorAll("li");
-let maxHeight = 0;
-LIs.forEach((LI) => {
-  console.log(maxHeight);
-  console.log(LI.clientHeight);
-  if (maxHeight < LI.clientHeight) {
-    maxHeight = LI.clientHeight;
-  }
+// const LIs = document.querySelectorAll("li");
+// let maxHeight = 0;
+// LIs.forEach((LI) => {
+//   console.log(maxHeight);
+//   console.log(LI.clientHeight);
+//   if (maxHeight < LI.clientHeight) {
+//     maxHeight = LI.clientHeight;
+//   }
+// });
+
+// LIs.forEach((LI) => {
+//   LI.style.height = `${maxHeight}px`;
+// });
+
+// 4
+const items = document.querySelectorAll("li");
+items.forEach((item, i) => {
+  item.addEventListener("click", (e) => {
+    console.log(`あなたは${i}番目を押しました！`);
+  });
 });
 
-LIs.forEach((LI) => {
-  LI.style.height = `${maxHeight}px`;
+// 5
+const title = document.querySelector("h1");
+const birthday = document.getElementById("birthday");
+birthday.addEventListener("change", (e) => {
+  console.log(e.target.value);
+  console.log(birthday.value);
+  if (birthday.value === "1990-01-03") {
+    title.style.display = "block";
+  }
 });
 
 // 1
 // 3
+// 4
