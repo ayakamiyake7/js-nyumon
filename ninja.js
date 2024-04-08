@@ -483,24 +483,64 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // });
 
 // 4
-const items = document.querySelectorAll("li");
-items.forEach((item, i) => {
-  item.addEventListener("click", (e) => {
-    console.log(`あなたは${i}番目を押しました！`);
-  });
-});
+// const items = document.querySelectorAll("li");
+// items.forEach((item, i) => {
+//   item.addEventListener("click", (e) => {
+//     console.log(`あなたは${i}番目を押しました！`);
+//   });
+// });
 
 // 5
-const title = document.querySelector("h1");
-const birthday = document.getElementById("birthday");
-birthday.addEventListener("change", (e) => {
-  console.log(e.target.value);
-  console.log(birthday.value);
-  if (birthday.value === "1990-01-03") {
-    title.style.display = "block";
+// const title = document.querySelector("h1");
+// const birthday = document.getElementById("birthday");
+// birthday.addEventListener("change", (e) => {
+//   console.log(e.target.value);
+//   console.log(birthday.value);
+//   if (birthday.value === "1990-01-03") {
+//     title.style.display = "block";
+//   }
+// });
+
+// 6
+// function naruhodo(txt) {
+//   console.log(`なるほど！${txt}なんですね！`);
+// }
+// naruhodo(`テレビ`);
+
+// 7
+// const items = document.querySelectorAll("li");
+// items.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     if (item.style.backgroundColor == "rgb(0, 0, 255)") {
+//       return;
+//     } else if (item.style.backgroundColor == "rgb(255, 0, 0)") {
+//       item.style.backgroundColor == "rgb(0, 0, 255)";
+//     }
+//   });
+// });
+// const items = document.querySelectorAll("li");
+// items.forEach((item) => {
+//   console.log(getComputedStyle(item).getPropertyValue("background-color"));
+//   item.addEventListener("click", () => {
+//     const backgroundColor =
+//       getComputedStyle(item).getPropertyValue("background-color");
+//     if (backgroundColor === "rgb(0, 0, 255)") {
+//       return;
+//     } else if (backgroundColor === "rgb(255, 0, 0)") {
+//       item.style.backgroundColor = "rgb(0, 0, 255)";
+//     }
+//   });
+// });
+
+// 8
+function ninja(target) {
+  if (Number.isInteger(target)) {
+    return target;
   }
-});
+}
+console.log(ninja(2));
 
 // 1
 // 3
 // 4
+// 7
