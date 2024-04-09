@@ -533,14 +533,63 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // });
 
 // 8
-function ninja(target) {
-  if (Number.isInteger(target)) {
-    return target;
-  }
+// function ninja(target) {
+//   if (Number.isInteger(target)) {
+//     return target;
+//   }
+// }
+// console.log(ninja(2));
+
+// 9
+// const ninja = "忍者CODE";
+// console.log(ninja.length);
+
+// 10
+// const this_month = new Date().getMonth() + 1;
+// console.log(this_month);
+// function month_judge(month) {
+//   if (month === this_month) {
+//     console.log("今月！");
+//   } else {
+//     console.log("今月の月ではありません");
+//   }
+// }
+// month_judge(2);
+
+// 11
+// const ninja = [1, 3, 5, 7];
+// ninja.pop();
+// console.log(ninja);
+
+// 12
+// let target_str = "忍者CODE";
+// function ninja_judge(str) {
+//   console.log(str.indexOf(target_str));
+//   if (str.indexOf(target_str) !== -1) {
+//     console.log("含む！");
+//   }
+// }
+// ninja_judge("忍者CODE");
+
+// 13
+// const ninja = "28";
+// const result = Number(ninja);
+// console.log(typeof result);
+
+// 14
+// const ninja = [2, 4, 52, 9, 38];
+// console.log(ninja[3]);
+
+// 15
+function my_uppercase(str) {
+  console.log(str.toUpperCase());
 }
-console.log(ninja(2));
+my_uppercase("CODE");
 
 // 1
 // 3
 // 4
 // 7
+// 11
+// 12
+// 13
