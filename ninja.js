@@ -581,10 +581,37 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // console.log(ninja[3]);
 
 // 15
-function my_uppercase(str) {
-  console.log(str.toUpperCase());
-}
-my_uppercase("CODE");
+// function my_uppercase(str) {
+//   console.log(str.toUpperCase());
+// }
+// my_uppercase("CODE");
+
+// 16
+// let my_array = [2, 19, 59, 203, 5];
+// let maxNum = Math.max(...my_array);
+// console.log(maxNum);
+
+// 17
+// const clone = document.querySelector(".clone");
+// const list = document.querySelector("ul");
+// clone.addEventListener("click", () => {
+//   const item = document.createElement("li");
+//   item.textContent = "忍者CODE";
+//   list.appendChild(item);
+// });
+
+// 18
+// const answer = document.querySelector(".answer");
+// const txt = document.querySelector("input[type=text]");
+// txt.addEventListener("focus", () => {
+//   answer.textContent = txt.value;
+//   console.log(txt.value);
+// });
+
+// 19
+const scrollVal = document.querySelector(".scroll-val");
+const scroll = document.querySelector(".x-scroll");
+scroll.addEventListener("scroll", () => {});
 
 // 1
 // 3
@@ -593,3 +620,4 @@ my_uppercase("CODE");
 // 11
 // 12
 // 13
+// 16
