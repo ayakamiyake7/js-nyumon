@@ -609,9 +609,24 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // });
 
 // 19
-const scrollVal = document.querySelector(".scroll-val");
-const scroll = document.querySelector(".x-scroll");
-scroll.addEventListener("scroll", () => {});
+// const scrollVal = document.querySelector(".scroll-val");
+// const scroll = document.querySelector(".x-scroll");
+// scroll.addEventListener("scroll", () => {
+//   const result = scroll.scrollLeft;
+//   scrollVal.textContent = result;
+// });
+
+// 20
+const deleteButton = document.querySelector(".delete");
+const ul = document.querySelector("ul");
+deleteButton.addEventListener("click", () => {
+  const items = document.querySelectorAll("ul li");
+  console.log(items);
+
+  if (items.length > 0) {
+    ul.removeChild(items[items.length - 1]);
+  }
+});
 
 // 1
 // 3
@@ -621,3 +636,4 @@ scroll.addEventListener("scroll", () => {});
 // 12
 // 13
 // 16
+// 20
