@@ -364,22 +364,23 @@ let windowSize = window.innerWidth;
 // });
 
 // 21
-function handleClick(e) {
-  const attributeDelete = e.target.getAttribute("data-delete");
-  console.log(attributeDelete);
-  const deleteTarget = document.querySelector("[data-delete-target]");
+// function handleClick(e) {
+//   const attributeDelete = e.target.getAttribute("data-delete");
+//   console.log(attributeDelete);
+//   const deleteTarget = document.querySelector("[data-delete-target]");
 
-  if (attributeDelete === "id") {
-    deleteTarget.removeAttribute("id");
-  } else if (attributeDelete === "class") {
-    deleteTarget.removeAttribute("class");
-  }
-}
+//   if (attributeDelete === "id") {
+//     deleteTarget.removeAttribute("id");
+//   } else if (attributeDelete === "class") {
+//     deleteTarget.removeAttribute("class");
+//   }
+// }
 
-const attributeDataDeletes = document.querySelectorAll("[data-delete]");
-attributeDataDeletes.forEach((attributeDataDelete) => {
-  attributeDataDelete.addEventListener("click", handleClick);
-});
+// const attributeDataDeletes = document.querySelectorAll("[data-delete]");
+// attributeDataDeletes.forEach((attributeDataDelete) => {
+//   attributeDataDelete.addEventListener("click", handleClick);
+// });
+
 // // Function to handle click event on elements with data-delete attribute
 // function handleClick(event) {
 //   // Get the value of data-delete attribute
@@ -617,15 +618,32 @@ attributeDataDeletes.forEach((attributeDataDelete) => {
 // });
 
 // 20
-const deleteButton = document.querySelector(".delete");
-const ul = document.querySelector("ul");
-deleteButton.addEventListener("click", () => {
-  const items = document.querySelectorAll("ul li");
-  console.log(items);
+// const deleteButton = document.querySelector(".delete");
+// const ul = document.querySelector("ul");
+// deleteButton.addEventListener("click", () => {
+//   const items = document.querySelectorAll("ul li");
+//   console.log(items);
 
-  if (items.length > 0) {
-    ul.removeChild(items[items.length - 1]);
+//   if (items.length > 0) {
+//     ul.removeChild(items[items.length - 1]);
+//   }
+// });
+
+// 21
+function handleClick(e) {
+  const getAttribute = e.target.getAttribute("data-delete");
+  console.log(getAttribute);
+  const deleteTarget = document.querySelector("[data-delete-target]");
+
+  if (getAttribute === "id") {
+    deleteTarget.removeAttribute("id");
+  } else if (getAttribute === "class") {
+    deleteTarget.removeAttribute("class");
   }
+}
+const attributeDataDeletes = document.querySelectorAll("[data-delete]");
+attributeDataDeletes.forEach((attributeDataDelete) => {
+  attributeDataDelete.addEventListener("click", handleClick);
 });
 
 // 1
@@ -637,3 +655,4 @@ deleteButton.addEventListener("click", () => {
 // 13
 // 16
 // 20
+// 21
