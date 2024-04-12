@@ -630,20 +630,26 @@ let windowSize = window.innerWidth;
 // });
 
 // 21
-function handleClick(e) {
-  const getAttribute = e.target.getAttribute("data-delete");
-  console.log(getAttribute);
-  const deleteTarget = document.querySelector("[data-delete-target]");
+// function handleClick(e) {
+//   const getAttribute = e.target.getAttribute("data-delete");
+//   console.log(getAttribute);
+//   const deleteTarget = document.querySelector("[data-delete-target]");
 
-  if (getAttribute === "id") {
-    deleteTarget.removeAttribute("id");
-  } else if (getAttribute === "class") {
-    deleteTarget.removeAttribute("class");
-  }
-}
-const attributeDataDeletes = document.querySelectorAll("[data-delete]");
-attributeDataDeletes.forEach((attributeDataDelete) => {
-  attributeDataDelete.addEventListener("click", handleClick);
+//   if (getAttribute === "id") {
+//     deleteTarget.removeAttribute("id");
+//   } else if (getAttribute === "class") {
+//     deleteTarget.removeAttribute("class");
+//   }
+// }
+// const attributeDataDeletes = document.querySelectorAll("[data-delete]");
+// attributeDataDeletes.forEach((attributeDataDelete) => {
+//   attributeDataDelete.addEventListener("click", handleClick);
+// });
+
+// 22
+const val = document.querySelector(".scroll-val");
+window.addEventListener("scroll", () => {
+  val.textContent = window.scrollY;
 });
 
 // 1
