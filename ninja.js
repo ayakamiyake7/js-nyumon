@@ -647,10 +647,26 @@ let windowSize = window.innerWidth;
 // });
 
 // 22
-const val = document.querySelector(".scroll-val");
-window.addEventListener("scroll", () => {
-  val.textContent = window.scrollY;
+// const val = document.querySelector(".scroll-val");
+// window.addEventListener("scroll", () => {
+//   val.textContent = window.scrollY;
+// });
+
+// 23
+const val = document.querySelector(".val");
+const txt = document.querySelector('input[type="text"]');
+const addButton = document.querySelector(".add");
+
+addButton.addEventListener("click", () => {
+  const inputValue = txt.value;
+  val.textContent += inputValue;
+  txt.value = "";
 });
+
+// add.addEventListener("click", () => {
+//   const inputValue = textValue.value;
+//   val.textContent += inputValue;
+// });
 
 // 1
 // 3
