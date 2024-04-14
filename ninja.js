@@ -431,7 +431,7 @@ let windowSize = window.innerWidth;
 //   console.log("alert!");
 // });
 
-//25
+// 25
 // const val = document.querySelector(".val");
 // const txt = document.querySelector('input[type = "text"]');
 // txt.addEventListener("change", () => {
@@ -653,20 +653,33 @@ let windowSize = window.innerWidth;
 // });
 
 // 23
-const val = document.querySelector(".val");
-const txt = document.querySelector('input[type="text"]');
-const addButton = document.querySelector(".add");
+// const val = document.querySelector(".val");
+// const txt = document.querySelector('input[type="text"]');
+// const addButton = document.querySelector(".add");
 
-addButton.addEventListener("click", () => {
-  const inputValue = txt.value;
-  val.textContent += inputValue;
-  txt.value = "";
-});
+// addButton.addEventListener("click", () => {
+//   const inputValue = txt.value;
+//   val.textContent += inputValue;
+//   txt.value = "";
+// });
 
 // add.addEventListener("click", () => {
 //   const inputValue = textValue.value;
 //   val.textContent += inputValue;
 // });
+
+// 24
+// const double = document.querySelector(".double");
+// double.addEventListener("dblclick", () => {
+//   console.log("double");
+// });
+
+// 25
+const val = document.querySelector(".val");
+const text = document.querySelector('input[type="text"]');
+text.addEventListener("change", () => {
+  val.textContent = text.value;
+});
 
 // 1
 // 3
@@ -678,3 +691,4 @@ addButton.addEventListener("click", () => {
 // 16
 // 20
 // 21
+// 23
