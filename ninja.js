@@ -675,10 +675,25 @@ let windowSize = window.innerWidth;
 // });
 
 // 25
+// const val = document.querySelector(".val");
+// const text = document.querySelector('input[type="text"]');
+// text.addEventListener("change", () => {
+//   val.textContent = text.value;
+// });
+
+// 26
+// const val = document.querySelector(".val");
+// window.addEventListener("resize", () => {
+//   val.textContent = window.innerWidth;
+//   // const result = window.innerWidth;
+//   // console.log(result);
+// });
+
+// 27
 const val = document.querySelector(".val");
-const text = document.querySelector('input[type="text"]');
-text.addEventListener("change", () => {
-  val.textContent = text.value;
+const txt = document.querySelector('input[type="text"]');
+txt.addEventListener("keyup", () => {
+  val.textContent = txt.value;
 });
 
 // 1
