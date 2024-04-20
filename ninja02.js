@@ -19,8 +19,22 @@
 
 // 3
 // const ninja = ["5", 6, "3"];
-const ninja = [5, 6, 3];
-const fun = ninja.every((item) => {
-  return typeof item == "number";
-});
-console.log(fun);
+// const ninja = [5, 6, 3];
+// const fun = ninja.every((item) => {
+//   return typeof item == "number";
+// });
+// console.log(fun);
+
+// 4
+// const ninja = (str) => {
+//   if (str.length >= 5) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// };
+const ninja = (str) => {
+  return str.length >= 5 ? true : false;
+};
+console.log(ninja("忍者CODE"));
+ninja("忍者");
