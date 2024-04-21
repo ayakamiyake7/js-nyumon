@@ -33,8 +33,17 @@
 //     console.log(false);
 //   }
 // };
-const ninja = (str) => {
-  return str.length >= 5 ? true : false;
-};
-console.log(ninja("忍者CODE"));
-ninja("忍者");
+// const ninja = (str) => {
+//   return str.length >= 5 ? true : false;
+// };
+// console.log(ninja("忍者CODE"));
+// ninja("忍者");
+
+// 5
+const fruits = ["りんご", "みかん", "バナナ"];
+// const judge = fruits.includes(str);
+
+const judge = fruits.some((str) => {
+  return fruits;
+});
+console.log(judge("みかん"));
