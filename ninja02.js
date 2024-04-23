@@ -40,10 +40,41 @@
 // ninja("忍者");
 
 // 5
-const fruits = ["りんご", "みかん", "バナナ"];
+// const fruits = ["りんご", "みかん", "バナナ"];
 // const judge = fruits.includes(str);
 
-const judge = fruits.some((str) => {
-  return fruits;
-});
-console.log(judge("みかん"));
+// function judge(str) {
+//   if (fruits.indexOf(str) != -1) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// const judge = (str) => {
+//   return fruits.indexOf(str) > 0 ? true : false;
+// };
+// console.log(judge("パイン"));
+// console.log(judge("みかん"));
+
+// 6
+// const my_array = ["忍者", "CO", "DE"];
+const my_array = [2, 3, 4];
+
+function ninja(my_array) {
+  let res = null;
+
+  const array_string = my_array.every((str) => {
+    return typeof str == "string";
+  });
+
+  if (array_string) {
+    res = my_array.join("");
+  } else {
+    res = my_array.reduce(function (p, c) {
+      return p + c;
+    });
+  }
+  return res;
+}
+
+console.log(ninja(my_array));
