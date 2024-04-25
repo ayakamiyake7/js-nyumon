@@ -81,13 +81,21 @@
 
 // 上級2回目
 // 1
-const anser = document.querySelector(".anser");
-const items = document.querySelectorAll("li");
-let total = 0;
+// const anser = document.querySelector(".anser");
+// const items = document.querySelectorAll("li");
+// let total = 0;
 
-items.forEach((item, index) => {
-  if (index != 2) {
-    total += item.clientWidth;
-  }
-});
-anser.textContent = total;
+// items.forEach((item, index) => {
+//   if (index != 2) {
+//     total += item.clientWidth;
+//   }
+// });
+// anser.textContent = total;
+
+// 2
+const ninja = [2, 34, 561, 5, 14];
+const futaketa = ninja.filter((num) => num >= 10 && num <= 99);
+console.log(futaketa);
+
+// 1
+// 2
