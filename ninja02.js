@@ -58,23 +58,36 @@
 
 // 6
 // const my_array = ["忍者", "CO", "DE"];
-const my_array = [2, 3, 4];
+// const my_array = [2, 3, 4];
 
-function ninja(my_array) {
-  let res = null;
+// function ninja(my_array) {
+//   let res = null;
 
-  const array_string = my_array.every((str) => {
-    return typeof str == "string";
-  });
+//   const array_string = my_array.every((str) => {
+//     return typeof str == "string";
+//   });
 
-  if (array_string) {
-    res = my_array.join("");
-  } else {
-    res = my_array.reduce(function (p, c) {
-      return p + c;
-    });
+//   if (array_string) {
+//     res = my_array.join("");
+//   } else {
+//     res = my_array.reduce(function (p, c) {
+//       return p + c;
+//     });
+//   }
+//   return res;
+// }
+
+// console.log(ninja(my_array));
+
+// 上級2回目
+// 1
+const anser = document.querySelector(".anser");
+const items = document.querySelectorAll("li");
+let total = 0;
+
+items.forEach((item, index) => {
+  if (index != 2) {
+    total += item.clientWidth;
   }
-  return res;
-}
-
-console.log(ninja(my_array));
+});
+anser.textContent = total;
