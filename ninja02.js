@@ -93,9 +93,17 @@
 // anser.textContent = total;
 
 // 2
-const ninja = [2, 34, 561, 5, 14];
-const futaketa = ninja.filter((num) => num >= 10 && num <= 99);
-console.log(futaketa);
+// const ninja = [2, 34, 561, 5, 14];
+// const futaketa = ninja.filter((num) => num >= 10 && num <= 99);
+// console.log(futaketa);
+
+// 3
+// const ninja = ["5", 6, "3"];
+const ninja = [5, 6, 3];
+// ninja.every((item) => typeof "number");
+const isNumber = (num) => typeof num == "number";
+console.log(ninja.every(isNumber));
 
 // 1
 // 2
+// 3
