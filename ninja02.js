@@ -98,11 +98,17 @@
 // console.log(futaketa);
 
 // 3
-// const ninja = ["5", 6, "3"];
-const ninja = [5, 6, 3];
-// ninja.every((item) => typeof "number");
-const isNumber = (num) => typeof num == "number";
-console.log(ninja.every(isNumber));
+// // const ninja = ["5", 6, "3"];
+// const ninja = [5, 6, 3];
+// // ninja.every((item) => typeof "number");
+// const isNumber = (num) => typeof num == "number";
+// console.log(ninja.every(isNumber));
+
+// 4
+function ninja(str) {
+  return str.length > 5 ? true : false;
+}
+console.log(ninja("CODEam"));
 
 // 1
 // 2
