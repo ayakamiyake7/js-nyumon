@@ -105,11 +105,28 @@
 // console.log(ninja.every(isNumber));
 
 // 4
-function ninja(str) {
-  return str.length > 5 ? true : false;
+// function ninja(str) {
+//   return str.length > 5 ? true : false;
+// }
+// console.log(ninja("CODEam"));
+
+// 5
+let fruits = ["りんご", "みかん", "バナナ"];
+function judge(str) {
+  if (fruits.indexOf(str) >= 0) {
+    console.log(true);
+  } else if (fruits.indexOf(str) == -1) {
+    console.log(false);
+  }
 }
-console.log(ninja("CODEam"));
+
+console.log("qqq", fruits.indexOf("りんご"));
+judge("りんご");
+judge("みかん");
+judge("バナナ");
+judge("パイナップル");
 
 // 1
 // 2
 // 3
+// 5
