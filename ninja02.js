@@ -111,20 +111,46 @@
 // console.log(ninja("CODEam"));
 
 // 5
-let fruits = ["りんご", "みかん", "バナナ"];
-function judge(str) {
-  if (fruits.indexOf(str) >= 0) {
-    console.log(true);
-  } else if (fruits.indexOf(str) == -1) {
-    console.log(false);
+// let fruits = ["りんご", "みかん", "バナナ"];
+// function judge(str) {
+//   if (fruits.indexOf(str) >= 0) {
+//     console.log(true);
+//   } else if (fruits.indexOf(str) == -1) {
+//     console.log(false);
+//   }
+// }
+
+// console.log("qqq", fruits.indexOf("りんご"));
+// judge("りんご");
+// judge("みかん");
+// judge("バナナ");
+// judge("パイナップル");
+
+// 6
+// const my_array = ["忍者", "CO", "DE"];
+const my_array = [2, 3, 4];
+
+// 数字か文字列か判定 => 文字列かどうか？
+function judge(my_array) {
+  let res;
+
+  const array_string = my_array.every((item) => {
+    return typeof item == "string";
+  });
+
+  if (array_string) {
+    res = my_array.join("");
+    console.log("string");
+  } else {
+    res = my_array.reduce(function (a, b) {
+      console.log("number");
+      return a + b;
+    });
   }
+  console.log(res);
 }
 
-console.log("qqq", fruits.indexOf("りんご"));
-judge("りんご");
-judge("みかん");
-judge("バナナ");
-judge("パイナップル");
+judge(my_array);
 
 // 1
 // 2
