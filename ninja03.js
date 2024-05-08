@@ -49,22 +49,38 @@
 // console.log(result);
 
 // 3
-const boxes = document.querySelectorAll("li");
-let maxHeight = 0;
-boxes.forEach((box) => {
-  console.log(maxHeight);
-  console.log(box.clientHeight);
-  if (maxHeight < box.clientHeight) {
-    maxHeight = box.clientHeight;
-  }
-});
-boxes.forEach((box) => {
-  box.style.height = `${maxHeight}px`;
-});
-console.log(maxHeight);
+// const boxes = document.querySelectorAll("li");
+// let maxHeight = 0;
+// boxes.forEach((box) => {
+//   console.log(maxHeight);
+//   console.log(box.clientHeight);
+//   if (maxHeight < box.clientHeight) {
+//     maxHeight = box.clientHeight;
+//   }
+// });
+// boxes.forEach((box) => {
+//   box.style.height = `${maxHeight}px`;
+// });
+// console.log(maxHeight);
 
 // 4
+// const items = document.querySelectorAll("li");
+// items.forEach((item, index) => {
+//   item.addEventListener("click", () => {
+//     console.log(`${index + 1}の忍`);
+//   });
+// });
+
 // 7
+const items = document.querySelectorAll("li");
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    if ((item.style.backgroundColor = "rgb(255, 0, 0)")) {
+      item.style.backgroundColor = "rgb(0, 0, 255)";
+    }
+  });
+});
+
 // 11
 // 12
 // 13
