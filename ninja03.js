@@ -72,21 +72,45 @@
 // });
 
 // 7
-const items = document.querySelectorAll("li");
-items.forEach((item) => {
-  item.addEventListener("click", () => {
-    if ((item.style.backgroundColor = "rgb(255, 0, 0)")) {
-      item.style.backgroundColor = "rgb(0, 0, 255)";
-    }
-  });
-});
+// const items = document.querySelectorAll("li");
+// items.forEach((item) => {
+//   item.addEventListener("click", () => {
+//     if ((item.style.backgroundColor = "rgb(255, 0, 0)")) {
+//       item.style.backgroundColor = "rgb(0, 0, 255)";
+//     }
+//   });
+// });
 
 // 11
+// const ninja = [1, 3, 5, 7];
+// console.log(ninja.pop());
+
 // 12
+// let target_str = "忍者CODE";
+// const ninja_judge = (str) => {
+//   if (str.indexOf(target_str) == -1) {
+//     return;
+//   } else {
+//     console.log("含む！");
+//   }
+// };
+// ninja_judge("あいうえお");
+// // ninja_judge("忍者CODE");
+// ninja_judge("忍者コード");
+// // ninja_judge("おはよう忍者CODE");
+
 // 13
+// let ninja = "28";
+// const number = Number(ninja);
+// console.log(typeof number);
+
 // 16
+const my_array = [2, 19, 59, 203, 5];
+console.log(Math.max(...my_array));
+
 // 20
 // 21
 // 23
 
 // intermediate - 3
+// intermediate - 16
