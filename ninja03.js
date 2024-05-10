@@ -105,12 +105,23 @@
 // console.log(typeof number);
 
 // 16
-const my_array = [2, 19, 59, 203, 5];
-console.log(Math.max(...my_array));
+// const my_array = [2, 19, 59, 203, 5];
+// console.log(Math.max(...my_array));
 
 // 20
+// const clickButton = document.querySelector(".delete");
+// const ul = document.querySelector("ul");
+// clickButton.addEventListener("click", () => {
+//   const items = document.querySelectorAll("li");
+//   // items.forEach((item, i) => {
+//   ul.removeChild(items[items.length - 1]);
+//   // });
+// });
+
 // 21
+
 // 23
 
 // intermediate - 3
 // intermediate - 16
+// intermediate - 20
