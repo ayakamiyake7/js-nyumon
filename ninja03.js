@@ -119,9 +119,26 @@
 // });
 
 // 21
+const clicks = document.querySelectorAll("[data-delete]");
+const deleteTarget = document.querySelector("[data-delete-target]");
+console.log(target);
+clicks.forEach((click) => {
+  console.log(click.getAttribute("data-delete"));
+  const attribute = click.getAttribute("data-delete");
+  if (attribute === "id") {
+    click.addEventListener("click", () => {
+      target.removeAttribute("id");
+    });
+  } else if (attribute === "class") {
+    click.addEventListener("click", () => {
+      target.removeAttribute("class");
+    });
+  }
+});
 
 // 23
 
 // intermediate - 3
 // intermediate - 16
 // intermediate - 20
+// intermediate - 21
