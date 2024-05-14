@@ -119,26 +119,39 @@
 // });
 
 // 21
-const clicks = document.querySelectorAll("[data-delete]");
-const deleteTarget = document.querySelector("[data-delete-target]");
-console.log(target);
-clicks.forEach((click) => {
-  console.log(click.getAttribute("data-delete"));
-  const attribute = click.getAttribute("data-delete");
-  if (attribute === "id") {
-    click.addEventListener("click", () => {
-      target.removeAttribute("id");
-    });
-  } else if (attribute === "class") {
-    click.addEventListener("click", () => {
-      target.removeAttribute("class");
-    });
-  }
-});
+// const clicks = document.querySelectorAll("[data-delete]");
+// const deleteTarget = document.querySelector("[data-delete-target]");
+// console.log(target);
+// clicks.forEach((click) => {
+//   console.log(click.getAttribute("data-delete"));
+//   const attribute = click.getAttribute("data-delete");
+//   if (attribute === "id") {
+//     click.addEventListener("click", () => {
+//       target.removeAttribute("id");
+//     });
+//   } else if (attribute === "class") {
+//     click.addEventListener("click", () => {
+//       target.removeAttribute("class");
+//     });
+//   }
+// });
 
 // 23
+let val = document.querySelector(".val");
+const text = document.querySelector("input");
+const addButton = document.querySelector(".add");
+addButton.addEventListener("click", () => {
+  val.textContent += text.value;
+});
 
 // intermediate - 3
 // intermediate - 16
 // intermediate - 20
 // intermediate - 21
+// intermediate - 23
+
+// 上級
+// 1
+// 2
+// 3
+// 5
