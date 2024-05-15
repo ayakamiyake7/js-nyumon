@@ -137,12 +137,12 @@
 // });
 
 // 23
-let val = document.querySelector(".val");
-const text = document.querySelector("input");
-const addButton = document.querySelector(".add");
-addButton.addEventListener("click", () => {
-  val.textContent += text.value;
-});
+// let val = document.querySelector(".val");
+// const text = document.querySelector("input");
+// const addButton = document.querySelector(".add");
+// addButton.addEventListener("click", () => {
+//   val.textContent += text.value;
+// });
 
 // intermediate - 3
 // intermediate - 16
@@ -152,6 +152,24 @@ addButton.addEventListener("click", () => {
 
 // 上級
 // 1
+// const anser = document.querySelector(".anser");
+// const items = document.querySelectorAll("li");
+// let result = 0;
+// items.forEach((item, i) => {
+//   if (i != 3) {
+//     result += item.clientWidth;
+//   }
+// });
+// console.log(result);
+// anser.textContent = result;
+
 // 2
+const ninja = [2, 34, 561, 5, 14];
+const futaketa = ninja.filter((item) => item > 10 && item < 99);
+console.log(futaketa);
+
 // 3
 // 5
+
+// advanced - 1
+// advanced - 2
