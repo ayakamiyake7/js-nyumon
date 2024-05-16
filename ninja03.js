@@ -164,12 +164,27 @@
 // anser.textContent = result;
 
 // 2
-const ninja = [2, 34, 561, 5, 14];
-const futaketa = ninja.filter((item) => item > 10 && item < 99);
-console.log(futaketa);
+// const ninja = [2, 34, 561, 5, 14];
+// const futaketa = ninja.filter((item) => item > 10 && item < 99);
+// console.log(futaketa);
 
 // 3
+// const ninja = ["5", 6, "3"];
+// // const ninja = [5, 6, 3];
+// console.log(ninja.every((num) => typeof num === "number"));
+
 // 5
+let fruits = ["りんご", "みかん", "バナナ"];
+const judge = (str) => {
+  if (fruits.indexOf(str) != -1) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+};
+judge("みかん");
+judge("パイナップル");
 
 // advanced - 1
 // advanced - 2
+// advanced - 3
