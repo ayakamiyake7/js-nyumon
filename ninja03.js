@@ -40,8 +40,6 @@
 //   target.style.transition = "0.4s ease-in";
 // });
 
-// basic - 13
-
 // 中級
 // 1
 // const box = document.querySelector(".box");
@@ -144,12 +142,6 @@
 //   val.textContent += text.value;
 // });
 
-// intermediate - 3
-// intermediate - 16
-// intermediate - 20
-// intermediate - 21
-// intermediate - 23
-
 // 上級
 // 1
 // const anser = document.querySelector(".anser");
@@ -174,17 +166,32 @@
 // console.log(ninja.every((num) => typeof num === "number"));
 
 // 5
-let fruits = ["りんご", "みかん", "バナナ"];
-const judge = (str) => {
-  if (fruits.indexOf(str) != -1) {
-    console.log(true);
-  } else {
-    console.log(false);
-  }
-};
-judge("みかん");
-judge("パイナップル");
+// let fruits = ["りんご", "みかん", "バナナ"];
+// const judge = (str) => {
+//   if (fruits.indexOf(str) != -1) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// };
+// judge("みかん");
+// judge("パイナップル");
 
+// basic - 13
+const target = document.querySelector(".target");
+const dummyTexts = ["ダミーテキストF", "ダミーテキストG", "ダミーテキストH"];
+
+dummyTexts.forEach((text) => {
+  const item = document.createElement("p");
+  item.textContent = text;
+  target.appendChild(item);
+});
+
+// intermediate - 3
+// intermediate - 16
+// intermediate - 20
+// intermediate - 21
+// intermediate - 23
 // advanced - 1
 // advanced - 2
 // advanced - 3
