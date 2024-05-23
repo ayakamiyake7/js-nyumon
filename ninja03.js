@@ -178,16 +178,29 @@
 // judge("パイナップル");
 
 // basic - 13
-const target = document.querySelector(".target");
-const dummyTexts = ["ダミーテキストF", "ダミーテキストG", "ダミーテキストH"];
+// const target = document.querySelector(".target");
+// const dummyTexts = ["ダミーテキストF", "ダミーテキストG", "ダミーテキストH"];
 
-dummyTexts.forEach((text) => {
-  const item = document.createElement("p");
-  item.textContent = text;
-  target.appendChild(item);
-});
+// dummyTexts.forEach((text) => {
+//   const item = document.createElement("p");
+//   item.textContent = text;
+//   target.appendChild(item);
+// });
 
 // intermediate - 3
+const items = document.querySelectorAll("li");
+let maxItem = 0;
+
+items.forEach((item) => {
+  if (maxItem < item.clientHeight) {
+    maxItem = item.clientHeight;
+    console.log(item.clientHeight);
+  }
+});
+items.forEach((item) => {
+  item.style.height = `${maxItem}px`;
+});
+
 // intermediate - 16
 // intermediate - 20
 // intermediate - 21
