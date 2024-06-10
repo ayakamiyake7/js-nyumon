@@ -188,23 +188,37 @@
 // });
 
 // intermediate - 3
-const items = document.querySelectorAll("li");
-let maxItem = 0;
+// const items = document.querySelectorAll("li");
+// let maxItem = 0;
 
-items.forEach((item) => {
-  if (maxItem < item.clientHeight) {
-    maxItem = item.clientHeight;
-    console.log(item.clientHeight);
-  }
-});
-items.forEach((item) => {
-  item.style.height = `${maxItem}px`;
-});
+// items.forEach((item) => {
+//   if (maxItem < item.clientHeight) {
+//     maxItem = item.clientHeight;
+//     console.log(item.clientHeight);
+//   }
+// });
+// items.forEach((item) => {
+//   item.style.height = `${maxItem}px`;
+// });
 
 // intermediate - 16
+// const my_array = [2, 19, 59, 203, 5];
+// console.log(Math.max(...my_array));
+
 // intermediate - 20
+const deleteButton = document.querySelector(".delete");
+const ul = document.querySelector("ul");
+
+deleteButton.addEventListener("click", () => {
+  const items = document.querySelectorAll("li");
+  let lastLi = items[items.length - 1];
+  ul.removeChild(lastLi);
+});
+
 // intermediate - 21
 // intermediate - 23
 // advanced - 1
 // advanced - 2
 // advanced - 3
+// intermediate - 3
+// intermediate - 20
