@@ -206,16 +206,29 @@
 // console.log(Math.max(...my_array));
 
 // intermediate - 20
-const deleteButton = document.querySelector(".delete");
-const ul = document.querySelector("ul");
+// const deleteButton = document.querySelector(".delete");
+// const ul = document.querySelector("ul");
 
-deleteButton.addEventListener("click", () => {
-  const items = document.querySelectorAll("li");
-  let lastLi = items[items.length - 1];
-  ul.removeChild(lastLi);
-});
+// deleteButton.addEventListener("click", () => {
+//   const items = document.querySelectorAll("li");
+//   let lastLi = items[items.length - 1];
+//   ul.removeChild(lastLi);
+// });
 
 // intermediate - 21
+// if data-deleteがidだったら
+// idをクリックするとdata-delete-targetのidが削除
+const deleteTarget = document.querySelector("[data-delete-target]");
+const deleteButtons = document.querySelectorAll("[data-delete]");
+console.log(deleteButtons);
+deleteButtons.forEach((deleteButton) => {
+  deleteButton.addEventListener("click", () => {
+    if (deleteButton.getAttribute == "id") {
+      console.log("id");
+    }
+  });
+});
+
 // intermediate - 23
 // advanced - 1
 // advanced - 2
