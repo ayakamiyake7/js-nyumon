@@ -5,3 +5,6 @@ function GCD(m, n) {
   return GCD(n, d);
 }
 console.log(GCD(72, 128));
+
+// バブルソート
+// https://sevendays-study.com/algorithm/day5_bubble_c.html
