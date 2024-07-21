@@ -69,3 +69,32 @@ for (let i = 1; i < array.length; i++) {
   console.log(array);
 }
 console.log("最終結果:", array);
+
+// クイックソート
+// https://sevendays-study.com/algorithm/day7_quick_c.html
+// ヒント https://github.com/TheAlgorithms/JavaScript/blob/master/Sorts/QuickSort.js
+function quickSort(items) {
+  const length = items.length;
+
+  if (length <= 1) {
+    return items;
+  }
+
+  const PIVOT = items[0];
+  const GREATER = [];
+  const LESSER = [];
+
+  for (let i = 1; i < length; i++) {
+    if (items[i] > PIVOT) {
+      GREATER.push(items[i]);
+    } else {
+      LESSER.push(items[i]);
+    }
+  }
+
+  const sorted = [...quickSort(LESSER), PIVOT, ...quickSort(GREATER)];
+  return sorted;
+}
+
+const items = [5, 2, 3, 1, 4];
+console.log(quickSort(items));
