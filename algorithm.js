@@ -98,3 +98,24 @@ function quickSort(items) {
 
 const items = [5, 2, 3, 1, 4];
 console.log(quickSort(items));
+
+// 線形探索
+// アルゴリズム図鑑 + ChatGPT
+function linearSearch(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return i;
+    }
+  }
+  return -1;
+}
+// 使用例
+const linearSearchArray = [20, 30, 40, 50, 60];
+const target = 30;
+
+const result = linearSearch(linearSearchArray, target);
+if (result !== -1) {
+  console.log(`要素が見つかりました！ ${result + 1} 番目の数字です！`);
+} else {
+  console.log("要素が見つかりませんでした");
+}
