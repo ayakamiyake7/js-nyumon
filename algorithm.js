@@ -119,3 +119,39 @@ if (result !== -1) {
 } else {
   console.log("要素が見つかりませんでした");
 }
+
+// 二分探索
+// アルゴリズム図鑑 + ChatGPT
+function binarySearch(arr, target) {
+  let left = 0; // index
+  let right = arr.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    console.log("mid=", mid);
+
+    if (arr[mid] === target) {
+      return mid;
+    } else if (arr[mid] < target) {
+      // ターゲットが真ん中より右半分にあるとき
+      left = mid + 1;
+    } else {
+      // ターゲットが真ん中より左半分にあるとき
+      right = mid - 1;
+    }
+  }
+  return -1;
+}
+
+// 使用例
+const binarySearchArr = [10, 20, 30, 40, 50, 60];
+const binarySearchTarget = 60;
+
+const binarySearchResult = binarySearch(binarySearchArr, binarySearchTarget);
+if (binarySearchResult !== -1) {
+  console.log(
+    `要素が見つかりました！ ${binarySearchResult + 1} 番目の数字です！`
+  );
+} else {
+  console.log("要素が見つかりませんでした");
+}
