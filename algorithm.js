@@ -4,7 +4,7 @@ function GCD(m, n) {
   if (d === 0) return n;
   return GCD(n, d);
 }
-console.log(GCD(72, 128));
+console.log(GCD(72, 128)); // 再帰関数
 
 // バブルソート
 // https://sevendays-study.com/algorithm/day5_bubble_c.html
@@ -155,3 +155,44 @@ if (binarySearchResult !== -1) {
 } else {
   console.log("要素が見つかりませんでした");
 }
+
+// 素数判定法
+// アルゴリズム図鑑 + ChatGPT
+function isPrime(n) {
+  if (n <= 1) {
+    return false; // 1以下の数は素数ではない
+  }
+  if (n <= 3) {
+    return true; // 2,3は素数
+  }
+  if (n % 2 === 0 || n % 3 === 0) {
+    return false; // 2または3で割り切れる数は正数ではない
+  }
+  // 5以上の数については、6k ± 1 の形の数だけチェック
+  for (let i = 5; i * i <= n; i += 6) {
+    if (n % i === 0 || n % (i + 2) === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+// 使用例
+console.log(isPrime(29));
+console.log(isPrime(30));
+
+// ハノイの塔
+// アルゴリズム図鑑 + ChatGPT
+function hanoi(n, fromRod, toRod, auxRod) {
+  if (n === 0) {
+    return;
+  }
+  // ステップ1: n-1個のディスクをfromRodからauxRodへ移動（toRodを補助として使用）
+  hanoi(n - 1, fromRod, auxRod, toRod);
+  // ステップ2: 残りの1個のディスクをfromRodからtoRodへ移動
+  console.log(`Move disk ${n} from rod ${fromRod} to rod ${toRod}`);
+  // ステップ3: n-1個のディスクをauxRodからtoRodへ移動（fromRodを補助として使用）
+  hanoi(n - 1, auxRod, toRod, fromRod);
+}
+// 使用例
+let numDisk = 3;
+hanoi(numDisk, "A", "C", "B");
