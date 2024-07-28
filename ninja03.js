@@ -220,11 +220,12 @@
 // idをクリックするとdata-delete-targetのidが削除
 const deleteTarget = document.querySelector("[data-delete-target]");
 const deleteButtons = document.querySelectorAll("[data-delete]");
-console.log(deleteButtons);
 deleteButtons.forEach((deleteButton) => {
   deleteButton.addEventListener("click", () => {
-    if (deleteButton.getAttribute == "id") {
-      console.log("id");
+    if (deleteButton.dataset.delete === "id") {
+      deleteTarget.removeAttribute("id");
+    } else {
+      deleteTarget.removeAttribute("class");
     }
   });
 });
