@@ -231,6 +231,13 @@ deleteButtons.forEach((deleteButton) => {
 });
 
 // intermediate - 23
+const valPoint = document.querySelector(".val");
+const inputArea = document.querySelector("input[type]");
+const addButton = document.querySelector(".add");
+addButton.addEventListener("click", () => {
+  valPoint.textContent += inputArea.value;
+});
+
 // advanced - 1
 // advanced - 2
 // advanced - 3
