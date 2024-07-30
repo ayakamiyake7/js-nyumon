@@ -218,28 +218,39 @@
 // intermediate - 21
 // if data-deleteがidだったら
 // idをクリックするとdata-delete-targetのidが削除
-const deleteTarget = document.querySelector("[data-delete-target]");
-const deleteButtons = document.querySelectorAll("[data-delete]");
-deleteButtons.forEach((deleteButton) => {
-  deleteButton.addEventListener("click", () => {
-    if (deleteButton.dataset.delete === "id") {
-      deleteTarget.removeAttribute("id");
-    } else {
-      deleteTarget.removeAttribute("class");
-    }
-  });
-});
+// const deleteTarget = document.querySelector("[data-delete-target]");
+// const deleteButtons = document.querySelectorAll("[data-delete]");
+// deleteButtons.forEach((deleteButton) => {
+//   deleteButton.addEventListener("click", () => {
+//     if (deleteButton.dataset.delete === "id") {
+//       deleteTarget.removeAttribute("id");
+//     } else {
+//       deleteTarget.removeAttribute("class");
+//     }
+//   });
+// });
 
 // intermediate - 23
-const valPoint = document.querySelector(".val");
-const inputArea = document.querySelector("input[type]");
-const addButton = document.querySelector(".add");
-addButton.addEventListener("click", () => {
-  valPoint.textContent += inputArea.value;
-});
+// const valPoint = document.querySelector(".val");
+// const inputArea = document.querySelector("input[type]");
+// const addButton = document.querySelector(".add");
+// addButton.addEventListener("click", () => {
+//   valPoint.textContent += inputArea.value;
+// });
 
 // advanced - 1
+const anserVal = document.querySelector(".anser");
+const lis = document.querySelectorAll("li");
+let result = 0;
+lis.forEach((li, i) => {
+  if (i != 3) {
+    result += li.clientWidth;
+  }
+});
+anserVal.textContent = result;
+
 // advanced - 2
 // advanced - 3
 // intermediate - 3
 // intermediate - 20
+// advanced - 1
