@@ -239,18 +239,42 @@
 // });
 
 // advanced - 1
-const anserVal = document.querySelector(".anser");
-const lis = document.querySelectorAll("li");
-let result = 0;
-lis.forEach((li, i) => {
-  if (i != 3) {
-    result += li.clientWidth;
-  }
-});
-anserVal.textContent = result;
+// const anserVal = document.querySelector(".anser");
+// const lis = document.querySelectorAll("li");
+// let result = 0;
+// lis.forEach((li, i) => {
+//   if (i != 3) {
+//     result += li.clientWidth;
+//   }
+// });
+// anserVal.textContent = result;
 
 // advanced - 2
+// const ninja = [2, 34, 561, 5, 14];
+// const futaketa = ninja.filter((num) => num >= 10 && num < 99);
+// const futaketa = ninja.filter((num) => String(num).length == 2);
+// console.log(futaketa);
+
 // advanced - 3
+// const ninja = ["5", 6, "3"];
+// const ninja = [5, 6, 3];
+// const resultNinja = ninja.every((num) => typeof num === "number");
+// console.log(resultNinja);
+
 // intermediate - 3
+const items = document.querySelectorAll("li");
+let hightest = 0;
+items.forEach((item) => {
+  if (hightest < item.clientHeight) {
+    hightest = item.clientHeight;
+    console.log(hightest);
+  }
+});
+items.forEach((item) => {
+  item.style.height = `${hightest}px`;
+});
+
 // intermediate - 20
 // advanced - 1
+// advanced - 3
+// intermediate - 3
