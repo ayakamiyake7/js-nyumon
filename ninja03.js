@@ -262,19 +262,32 @@
 // console.log(resultNinja);
 
 // intermediate - 3
-const items = document.querySelectorAll("li");
-let hightest = 0;
-items.forEach((item) => {
-  if (hightest < item.clientHeight) {
-    hightest = item.clientHeight;
-    console.log(hightest);
-  }
-});
-items.forEach((item) => {
-  item.style.height = `${hightest}px`;
-});
+// const items = document.querySelectorAll("li");
+// let hightest = 0;
+// console.log(items);
+// items.forEach((item) => {
+//   if (hightest < item.clientHeight) {
+//     hightest = item.clientHeight;
+//     console.log("hightest", hightest);
+//     console.log("item.clientHeight", item.clientHeight);
+//   }
+// });
+// console.log("hightest", hightest);
+
+// items.forEach((item) => {
+//   item.style.height = `${hightest}px`;
+// });
 
 // intermediate - 20
+const deleteButton = document.querySelector(".delete");
+const list = document.querySelector("ul");
+deleteButton.addEventListener("click", () => {
+  const items = document.querySelectorAll("li");
+  const lastLi = items[items.length - 1];
+  list.removeChild(lastLi);
+});
+
 // advanced - 1
 // advanced - 3
 // intermediate - 3
+// intermediate - 20
