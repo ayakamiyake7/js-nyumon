@@ -279,15 +279,25 @@
 // });
 
 // intermediate - 20
-const deleteButton = document.querySelector(".delete");
-const list = document.querySelector("ul");
-deleteButton.addEventListener("click", () => {
-  const items = document.querySelectorAll("li");
-  const lastLi = items[items.length - 1];
-  list.removeChild(lastLi);
-});
+// const deleteButton = document.querySelector(".delete");
+// const list = document.querySelector("ul");
+// deleteButton.addEventListener("click", () => {
+//   const items = document.querySelectorAll("li");
+//   const lastLi = items[items.length - 1];
+//   list.removeChild(lastLi);
+// });
 
 // advanced - 1
+const anser = document.querySelector(".anser");
+const items = document.querySelectorAll("li");
+let totalWidth = 0;
+
+items.forEach((item) => {
+  totalWidth += item.clientWidth;
+});
+anser.textContent = totalWidth;
+
 // advanced - 3
 // intermediate - 3
 // intermediate - 20
+// advanced - 1
